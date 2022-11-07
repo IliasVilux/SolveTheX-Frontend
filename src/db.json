@@ -1,0 +1,18 @@
+{
+  "ropa": [
+    {
+      "id": 0,
+      "name": "Nike Sportswear Repeat",
+      "description": "Eleva tu look para el día a día con el estilo moderno y minimalista de este básico de tu fondo de armario. El suave tejido Fleece es la prenda cómoda que más te gusta, y los diseños Swoosh repetidos ofrecen un look estilizado.",
+      "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/ebbe343e-024a-4a6f-b83b-a7b6b18eb3e8/sportswear-repeat-sudadera-con-capucha-de-tejido-fleece-Hk30k2.png",
+      "price": 41.97
+    },
+    {
+      "id": 1,
+      "name": "Nike Air Force 1 '07",
+      "description": "El fulgor sigue vivo en las Nike Air Force 1 '07, un modelo original de baloncesto que introduce un nuevo giro a sus ya característicos revestimientos con costuras duraderas, sus acabados impecables y la cantidad perfecta de reflectante.",
+      "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-zapatillas-GjGXSP.png",
+      "price": 119.99
+    }
+  ]
+}
