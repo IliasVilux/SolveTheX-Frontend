@@ -19,23 +19,23 @@
               <input v-model="prenda.name" type="string" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
-              <label for="desciption" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Desciption</label>
-              <textarea rows="6" cols="50" :value="prenda.description" name="desciption" id="desciption" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+              <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">description</label>
+              <textarea v-model="prenda.description" rows="6" cols="50" name="description" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
               </textarea>
             </div>
             <div>
               <label for="imgURL" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Image URL</label>
-              <input type="string" name="imgURL" id="imgURL" :value="prenda.imgURL" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+              <input v-model="prenda.imgURL" type="string" name="imgURL" id="imgURL" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
               <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price</label>
-              <input type="number" step="0.01" name="price" id="price" :value="prenda.price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+              <input v-model="prenda.price" type="number" step="0.01" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div class="flex justify-end items-center">
               <button class="mx-5 rounded text-white bg-sky-500 border border-slate-200 h-10 px-6" @click="isntVisible">Cancel</button>
+              <button class="rounded border border-slate-200 h-10 px-6" @click="update">Submit</button>
             </div>
           </form>
-              <button class="rounded border border-slate-200 h-10 px-6" @click="update">Submit</button>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@ export default {
       this.$emit('cancel')
     },
     async update(){
-      if(this.prenda.name != null && this.prenda.imgURL != null && this.prenda.price != null){
+      if(this.prenda.name != '' && this.prenda.imgURL != '' && this.prenda.price != ''){
         return await PrendasService.updatePrenda(this.prenda);
       }
     }

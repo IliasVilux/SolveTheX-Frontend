@@ -2,10 +2,10 @@
   "ropa": [
     {
       "id": 0,
-      "name": "3Nike Sportswear Repeat 223232",
-      "description": "Eleva tu look para el día a día con el estilo moderno y minimalista de este básico de tu fondo de armario. El suave tejido Fleece es la prenda cómoda que más te gusta, y los diseños Swoosh repetidos ofrecen un look estilizado.",
-      "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/ebbe343e-024a-4a6f-b83b-a7b6b18eb3e8/sportswear-repeat-sudadera-con-capucha-de-tejido-fleece-Hk30k2.png",
-      "price": 41.97
+      "name": "Nike Sportswear Repeat",
+      "description": "Por fin una prenda de ajuste sencillo que puedes llevar en prácticamente cualquier lugar. Tanto si te vas a la ciudad como si te vas de vacaciones, nuestro tejido de doble punto mantiene la calidez. Puedes meter las manos frías en el bolsillo delantero para una mayor calidez.",
+      "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/f588fda8-7466-43dc-8625-073655c21eff/sportswear-repeat-sudadera-con-media-cremallera-bKsgt0.png",
+      "price": 69.99
     },
     {
       "id": 1,
@@ -23,7 +23,7 @@
     },
     {
       "id": 3,
-      "name": "Air Jordan 1 Low G",
+      "name": "Air Jordan 1 Low G w",
       "description": "Te sentirás invencible con estas zapatillas desde el primer swing hasta el último putt. Inspiradas en una de las zapatillas más icónicas de todos los tiempos, las Air Jordan 1 G son un clásico instantáneo en el campo. Con amortiguación Air en la planta del pie, un logotipo Wings en el talón y un patrón de tracción integrado para ayudarte en el swing, este modelo te ofrece todo el estilo de club de golf de las AJ1 originales, además de todo lo que necesitas para jugar con comodidad los 18 hoyos.",
       "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/fac4e5c6-d9f4-454f-b7f2-b3d8d8c81619/air-jordan-1-low-g-zapatillas-de-golf-lfBl0t.png",
       "price": 139.99

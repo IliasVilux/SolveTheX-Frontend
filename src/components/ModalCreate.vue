@@ -19,8 +19,8 @@
               <input v-model="addPrenda.name" type="string" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
-              <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Desciption</label>
-              <textarea v-model="addPrenda.desciption" rows="4" cols="50" name="desciption" id="desciption" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+              <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">description</label>
+              <textarea v-model="addPrenda.description" rows="4" cols="50" name="description" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
               </textarea>
             </div>
             <div>
@@ -53,7 +53,7 @@ export default {
     return {
       addPrenda: {
         name: null,
-        desciption: null, 
+        description: null, 
         imgURL: null,
         price: null
       }

@@ -9,7 +9,6 @@ export default {
     },
     updatePrenda(prenda: object){
         Api().put('/ropa/' + prenda.id, prenda)
-        window.location.reload();
 
     },
     deletePrenda(id: Int16Array){
