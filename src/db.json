@@ -2,7 +2,7 @@
   "ropa": [
     {
       "id": 0,
-      "name": "Nike Sportswear Repeat",
+      "name": "3Nike Sportswear Repeat 223232",
       "description": "Eleva tu look para el día a día con el estilo moderno y minimalista de este básico de tu fondo de armario. El suave tejido Fleece es la prenda cómoda que más te gusta, y los diseños Swoosh repetidos ofrecen un look estilizado.",
       "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/ebbe343e-024a-4a6f-b83b-a7b6b18eb3e8/sportswear-repeat-sudadera-con-capucha-de-tejido-fleece-Hk30k2.png",
       "price": 41.97
@@ -13,6 +13,20 @@
       "description": "El fulgor sigue vivo en las Nike Air Force 1 '07, un modelo original de baloncesto que introduce un nuevo giro a sus ya característicos revestimientos con costuras duraderas, sus acabados impecables y la cantidad perfecta de reflectante.",
       "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-zapatillas-GjGXSP.png",
       "price": 119.99
+    },
+    {
+      "id": 2,
+      "name": "Nike SB Nyjah Free 2",
+      "description": "Las Nike SB Nyjah Free 2 son una nueva versión digna de sus predecesoras. Inspiradas en las icónicas Nike Air Zoom Spiridon, el diseño de goma original se ha actualizado con paneles de malla para mantener la frescura en los pies durante las sesiones de patinaje más intensas.",
+      "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/9d284f7c-8830-49bf-a9f5-fa68f7cfb9ed/sb-nyjah-free-2-zapatillas-de-skateboard-c0KSLt.png",
+      "price": 56.97
+    },
+    {
+      "id": 3,
+      "name": "Air Jordan 1 Low G",
+      "description": "Te sentirás invencible con estas zapatillas desde el primer swing hasta el último putt. Inspiradas en una de las zapatillas más icónicas de todos los tiempos, las Air Jordan 1 G son un clásico instantáneo en el campo. Con amortiguación Air en la planta del pie, un logotipo Wings en el talón y un patrón de tracción integrado para ayudarte en el swing, este modelo te ofrece todo el estilo de club de golf de las AJ1 originales, además de todo lo que necesitas para jugar con comodidad los 18 hoyos.",
+      "imgURL": "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/fac4e5c6-d9f4-454f-b7f2-b3d8d8c81619/air-jordan-1-low-g-zapatillas-de-golf-lfBl0t.png",
+      "price": 139.99
     }
   ]
 }

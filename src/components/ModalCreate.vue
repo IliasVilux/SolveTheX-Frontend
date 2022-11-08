@@ -19,23 +19,23 @@
               <input v-model="addPrenda.name" type="string" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
-              <label for="desciption" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Desciption</label>
+              <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Desciption</label>
               <textarea v-model="addPrenda.desciption" rows="4" cols="50" name="desciption" id="desciption" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
               </textarea>
             </div>
             <div>
               <label for="imageURL" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Image URL</label>
-              <input v-model="addPrenda.imageURL" type="string" name="imageURL" id="imageURL" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+              <input v-model="addPrenda.imgURL" type="string" name="imageURL" id="imageURL" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
               <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price</label>
-              <input v-model="addPrenda.price" type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+              <input v-model="addPrenda.price" type="number" step="0.01" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div class="flex justify-end items-center">
               <button class="mx-5 rounded text-white bg-sky-500 border border-slate-200 h-10 px-6" @click="isntVisible">Cancel</button>
+              <button class="rounded border border-slate-200 h-10 px-6" @click="addGarment">Submit</button>
             </div>
           </form>
-              <button class="rounded border border-slate-200 h-10 px-6" @click="addGarment">Submit</button>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@ export default {
       addPrenda: {
         name: null,
         desciption: null, 
-        imageURL: null,
+        imgURL: null,
         price: null
       }
     }
@@ -67,7 +67,9 @@ export default {
       this.$emit('cancel')
     },
     async addGarment(){
-      await PrendasService.addPrenda(this.addPrenda);
+      if(this.addPrenda.name != null && this.addPrenda.imgURL != null && this.addPrenda.price != null){
+        return await PrendasService.addPrenda(this.addPrenda);
+      }
     }
   }
 };
